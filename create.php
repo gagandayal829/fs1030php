@@ -3,8 +3,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$name = $address = $salary = $department = $position "";
-$name_err = $address_err = $salary_err = $department_err = $position_err"";
+$name = $address = $salary = $department = $position = "";
+$name_err = $address_err = $salary_err = $department_err = $position_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
