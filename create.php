@@ -3,8 +3,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$name = $address = $salary = $department = $position = "";
-$name_err = $address_err = $salary_err = $department_err = $position_err = "";
+$name = $address = $salary = $department = $position "";
+$name_err = $address_err = $salary_err = $department_err = $position_err"";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -128,8 +128,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         </div>
                         <div class="form-group <?php echo (!empty($department_err)) ? 'has-error' : ''; ?>">
                             <label>Department</label>
-                            <input type="text" name="department" class="form-control" value="<?php echo $department; ?>">
-                            <span class="help-block"><?php echo $department_err;?></span>
+                        <select id="department" name="department" class="form-control" value="<?php echo $department; ?>">
+                            <option>HR Department</option>
+                            <option>Finance</option>
+                            <option>Administration</option>
+                            <option>R&D Department</option>
+                        </select>
+                        <span class="help-block"><?php echo $department_err;?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($position_err)) ? 'has-error' : ''; ?>">
                             <label>Position</label>
