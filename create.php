@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $department = $input_department;
     }
 
-    $input_position = trim($_POST["postion"]);
+    $input_position = trim($_POST["position"]);
     if(empty($input_position)){
         $position_err = "Please enter an position.";     
     } else{
