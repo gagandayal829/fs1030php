@@ -12,7 +12,7 @@ Windows users go to c:/xampp/htdocs/ folder
 Clone repo there
 
 ```
-git clone https://github.com/tarun27in/FS1030
+git clone https://github.com/gagandayal829/fs1030php.git
 ```
 
 ## Create DB and Table
@@ -27,14 +27,16 @@ CREATE TABLE employees (
 `name` varchar(100) not null,
 `address` varchar (255) not null,
 `salary` double not null,
+`department` varchar(255) not null,
+`position` varchar(255) not null,
 PRIMARY KEY (`id`) 
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 ```
 
 ## Execute code
 
-Open http://localhost/FS1030php/
+Open http://localhost/fs1030php/
 
 ## To know about php environment
 
-Open http://localhost/FS1030php/phpinfo.php
+Open http://localhost/fs1030php/phpinfo.php
